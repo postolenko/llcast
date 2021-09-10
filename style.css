@@ -985,7 +985,7 @@ textarea:focus {
     display: -webkit-flex;
     align-items: center;
     -webkit-align-items: center;
-    padding: 0 15px;
+    padding: 0 24px 0 15px;
     border-bottom: 1px solid #EBEFF2;
 }
 
@@ -1023,7 +1023,7 @@ textarea:focus {
 }
 
 .table_1 .checkbox {
-    top: 2px;
+    top: 1px;
 }
 
 .checkbox input {
