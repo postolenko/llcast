@@ -736,6 +736,7 @@ textarea:focus {
 .info_box_templ {
     display: flex;
     display: -webkit-flex;
+    max-width: 715px;
     position: relative;
     background-color: #FCF3C5;
     padding: 6px 75px 6px 17px;
@@ -810,7 +811,7 @@ textarea:focus {
 }
 
 .info_box_templ .dropdown_box p {
-    /*white-space: nowrap;*/
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
