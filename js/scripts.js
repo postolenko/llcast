@@ -6,20 +6,14 @@ bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
 
 $(window).load(function() {
-
-
-
+  $(".scroll_y").mCustomScrollbar();
 });
 
 $(window).resize(function() {
 
-
-
 });
 
 $(document).scroll(function() {
-
-
 
 });
 
@@ -163,6 +157,13 @@ $(document).ready(function() {
   $(".sidebar_btn").on("click", function(e) {
     e.preventDefault();
     $(".llcast_templ").toggleClass("hidden");
+    $(".resp_bg").addClass("visible");
+  });
+
+  $(".resp_btn, .resp_bg").on("click", function(e) {
+    e.preventDefault();
+    $(".llcast_templ").removeClass("hidden");
+    $(".resp_bg").removeClass("visible");
   });
 
 });

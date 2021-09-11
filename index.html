@@ -10,7 +10,6 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">	
 	<title>LLCAST</title>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 
 <body>
@@ -19,14 +18,17 @@
 
 	<!-- Content -->
 		<div class="content">
-
 			<div class="llcast_templ">
-				<div class="left_col">
+				<div class="left_col" id="sidebar">
 					<div class="sidebar">
 						<div class="logo_wrapp">
 							<a href="#" class="logo">LLCAST</a>
+							<button type="button" class="resp_btn">
+								<img class="right_arrow_white" src="img/right_arrow_white.svg" alt="" />
+								<img class="burger" src="img/burger_white.svg" alt="">
+							</button>
 						</div>
-						<div class="sidebar_nav_wrapp">
+						<div class="sidebar_nav_wrapp scroll_y">
 							<ul class="sidebar_nav">
 								<li>
 									<a href="#" class="active"><span>Instances</span></a>
@@ -59,7 +61,7 @@
 					</div>
 				</div>
 				<div class="right_col">
-					<div class="header_templ">
+					<div class="header_templ" id="fixedHeader">
 						<div class="left_col">
 							<button type="button" class="sidebar_btn">
 								<img class="right_arrow" src="img/right_arrow.svg" alt="" />
@@ -299,191 +301,193 @@
 									</button>
 								</div>
 							</div>
-							<div class="table_1 checkboxes_array">
-								<div class="table_row">
-									<div class="cell">
-										<label class="checkbox main_checkbox"><input type="checkbox" name="" /><span></span></label>
-									</div>
-									<div class="cell">
-										<h3>Instance</h3>
-									</div>
-									<div class="cell">
-										<h3>Domain</h3>
-									</div>
-									<div class="cell">
-										<h3>External IP</h3>
-									</div>
-									<div class="cell">
-										<div class="sort_drp_wrapp drp_box">
-											<a href="#" class="sort_link drp_box_btn">Status</a>
-											<div class="sort_drp_menu drp_box_menu">
-												<div class="ch_items">
-													<div class="ch_item">
-														<div>
-															<p>Active</p>
+							<div class="table_1_scroll_x">
+								<div class="table_1 checkboxes_array">
+									<div class="table_row">
+										<div class="cell">
+											<label class="checkbox main_checkbox"><input type="checkbox" name="" /><span></span></label>
+										</div>
+										<div class="cell">
+											<h3>Instance</h3>
+										</div>
+										<div class="cell">
+											<h3>Domain</h3>
+										</div>
+										<div class="cell">
+											<h3>External IP</h3>
+										</div>
+										<div class="cell">
+											<div class="sort_drp_wrapp drp_box">
+												<a href="#" class="sort_link drp_box_btn">Status</a>
+												<div class="sort_drp_menu drp_box_menu">
+													<div class="ch_items">
+														<div class="ch_item">
+															<div>
+																<p>Active</p>
+															</div>
+															<div>
+																<label class="checkbox checkbox_2"><input type="checkbox" name="" /><span></span></label>
+															</div>
 														</div>
-														<div>
-															<label class="checkbox checkbox_2"><input type="checkbox" name="" /><span></span></label>
+														<div class="ch_item">
+															<div>
+																<p>Terminated</p>
+															</div>
+															<div>
+																<label class="checkbox checkbox_2"><input type="checkbox" name="" /><span></span></label>
+															</div>
 														</div>
 													</div>
-													<div class="ch_item">
-														<div>
-															<p>Terminated</p>
-														</div>
-														<div>
-															<label class="checkbox checkbox_2"><input type="checkbox" name="" /><span></span></label>
-														</div>
+													<div class="sort_drp_menu_footer">
+														<a href="#" class="blue_link">Clear</a>
 													</div>
-												</div>
-												<div class="sort_drp_menu_footer">
-													<a href="#" class="blue_link">Clear</a>
 												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="table_row">
-									<div class="cell">
-										<label class="checkbox ch_children"><input type="checkbox" name="" /><span></span></label>
+									<div class="table_row">
+										<div class="cell">
+											<label class="checkbox ch_children"><input type="checkbox" name="" /><span></span></label>
+										</div>
+										<div class="cell">
+											<p>DigitalOcean-FR-01</p>
+											<p class="sub_p">Amazon AWS, c3.xlagre, eu-east, Amazon Linux</p>
+										</div>
+										<div class="cell">
+											<p>server1.flashphoner.com</p>
+										</div>
+										<div class="cell">
+											<p>102.74.255.244</p>
+										</div>
+										<div class="cell">
+											<div class="tag green">Active</div>
+										</div>
 									</div>
-									<div class="cell">
-										<p>DigitalOcean-FR-01</p>
-										<p class="sub_p">Amazon AWS, c3.xlagre, eu-east, Amazon Linux</p>
+									<div class="table_row">
+										<div class="cell">
+											<label class="checkbox ch_children"><input type="checkbox" name="" /><span></span></label>
+										</div>
+										<div class="cell">
+											<p>DigitalOcean-FR-01</p>
+											<p class="sub_p">Amazon AWS, c3.xlagre, eu-east, Amazon Linux</p>
+										</div>
+										<div class="cell">
+											<p>server1.flashphoner.com</p>
+										</div>
+										<div class="cell">
+											<p>102.74.255.244</p>
+										</div>
+										<div class="cell">
+											<div class="tag green">Active</div>
+										</div>
 									</div>
-									<div class="cell">
-										<p>server1.flashphoner.com</p>
+									<div class="table_row">
+										<div class="cell">
+											<label class="checkbox ch_children"><input type="checkbox" name="" /><span></span></label>
+										</div>
+										<div class="cell">
+											<p>DigitalOcean-FR-01</p>
+											<p class="sub_p">Amazon AWS, c3.xlagre, eu-east, Amazon Linux</p>
+										</div>
+										<div class="cell">
+											<p>server1.flashphoner.com</p>
+										</div>
+										<div class="cell">
+											<p>102.74.255.244</p>
+										</div>
+										<div class="cell">
+											<div class="tag green">Active</div>
+										</div>
 									</div>
-									<div class="cell">
-										<p>102.74.255.244</p>
+									<div class="table_row">
+										<div class="cell">
+											<label class="checkbox ch_children"><input type="checkbox" name="" /><span></span></label>
+										</div>
+										<div class="cell">
+											<p>DigitalOcean-FR-01</p>
+											<p class="sub_p">Amazon AWS, c3.xlagre, eu-east, Amazon Linux</p>
+										</div>
+										<div class="cell">
+											<p>server1.flashphoner.com</p>
+										</div>
+										<div class="cell">
+											<p>102.74.255.244</p>
+										</div>
+										<div class="cell">
+											<div class="tag green">Active</div>
+										</div>
 									</div>
-									<div class="cell">
-										<div class="tag green">Active</div>
+									<div class="table_row">
+										<div class="cell">
+											<label class="checkbox ch_children"><input type="checkbox" name="" /><span></span></label>
+										</div>
+										<div class="cell">
+											<p>DigitalOcean-FR-01</p>
+											<p class="sub_p">Amazon AWS, c3.xlagre, eu-east, Amazon Linux</p>
+										</div>
+										<div class="cell">
+											<p>server1.flashphoner.com</p>
+										</div>
+										<div class="cell">
+											<p>102.74.255.244</p>
+										</div>
+										<div class="cell">
+											<div class="tag green">Active</div>
+										</div>
 									</div>
-								</div>
-								<div class="table_row">
-									<div class="cell">
-										<label class="checkbox ch_children"><input type="checkbox" name="" /><span></span></label>
+									<div class="table_row">
+										<div class="cell">
+											<label class="checkbox ch_children"><input type="checkbox" name="" /><span></span></label>
+										</div>
+										<div class="cell">
+											<p>DigitalOcean-FR-01</p>
+											<p class="sub_p">Amazon AWS, c3.xlagre, eu-east, Amazon Linux</p>
+										</div>
+										<div class="cell">
+											<p>server1.flashphoner.com</p>
+										</div>
+										<div class="cell">
+											<p>102.74.255.244</p>
+										</div>
+										<div class="cell">
+											<div class="tag green">Active</div>
+										</div>
 									</div>
-									<div class="cell">
-										<p>DigitalOcean-FR-01</p>
-										<p class="sub_p">Amazon AWS, c3.xlagre, eu-east, Amazon Linux</p>
+									<div class="table_row">
+										<div class="cell">
+											<label class="checkbox ch_children"><input type="checkbox" name="" /><span></span></label>
+										</div>
+										<div class="cell">
+											<p>DigitalOcean-FR-01</p>
+											<p class="sub_p">Amazon AWS, c3.xlagre, eu-east, Amazon Linux</p>
+										</div>
+										<div class="cell">
+											<p>server1.flashphoner.com</p>
+										</div>
+										<div class="cell">
+											<p>102.74.255.244</p>
+										</div>
+										<div class="cell">
+											<div class="tag green">Active</div>
+										</div>
 									</div>
-									<div class="cell">
-										<p>server1.flashphoner.com</p>
-									</div>
-									<div class="cell">
-										<p>102.74.255.244</p>
-									</div>
-									<div class="cell">
-										<div class="tag green">Active</div>
-									</div>
-								</div>
-								<div class="table_row">
-									<div class="cell">
-										<label class="checkbox ch_children"><input type="checkbox" name="" /><span></span></label>
-									</div>
-									<div class="cell">
-										<p>DigitalOcean-FR-01</p>
-										<p class="sub_p">Amazon AWS, c3.xlagre, eu-east, Amazon Linux</p>
-									</div>
-									<div class="cell">
-										<p>server1.flashphoner.com</p>
-									</div>
-									<div class="cell">
-										<p>102.74.255.244</p>
-									</div>
-									<div class="cell">
-										<div class="tag green">Active</div>
-									</div>
-								</div>
-								<div class="table_row">
-									<div class="cell">
-										<label class="checkbox ch_children"><input type="checkbox" name="" /><span></span></label>
-									</div>
-									<div class="cell">
-										<p>DigitalOcean-FR-01</p>
-										<p class="sub_p">Amazon AWS, c3.xlagre, eu-east, Amazon Linux</p>
-									</div>
-									<div class="cell">
-										<p>server1.flashphoner.com</p>
-									</div>
-									<div class="cell">
-										<p>102.74.255.244</p>
-									</div>
-									<div class="cell">
-										<div class="tag green">Active</div>
-									</div>
-								</div>
-								<div class="table_row">
-									<div class="cell">
-										<label class="checkbox ch_children"><input type="checkbox" name="" /><span></span></label>
-									</div>
-									<div class="cell">
-										<p>DigitalOcean-FR-01</p>
-										<p class="sub_p">Amazon AWS, c3.xlagre, eu-east, Amazon Linux</p>
-									</div>
-									<div class="cell">
-										<p>server1.flashphoner.com</p>
-									</div>
-									<div class="cell">
-										<p>102.74.255.244</p>
-									</div>
-									<div class="cell">
-										<div class="tag green">Active</div>
-									</div>
-								</div>
-								<div class="table_row">
-									<div class="cell">
-										<label class="checkbox ch_children"><input type="checkbox" name="" /><span></span></label>
-									</div>
-									<div class="cell">
-										<p>DigitalOcean-FR-01</p>
-										<p class="sub_p">Amazon AWS, c3.xlagre, eu-east, Amazon Linux</p>
-									</div>
-									<div class="cell">
-										<p>server1.flashphoner.com</p>
-									</div>
-									<div class="cell">
-										<p>102.74.255.244</p>
-									</div>
-									<div class="cell">
-										<div class="tag green">Active</div>
-									</div>
-								</div>
-								<div class="table_row">
-									<div class="cell">
-										<label class="checkbox ch_children"><input type="checkbox" name="" /><span></span></label>
-									</div>
-									<div class="cell">
-										<p>DigitalOcean-FR-01</p>
-										<p class="sub_p">Amazon AWS, c3.xlagre, eu-east, Amazon Linux</p>
-									</div>
-									<div class="cell">
-										<p>server1.flashphoner.com</p>
-									</div>
-									<div class="cell">
-										<p>102.74.255.244</p>
-									</div>
-									<div class="cell">
-										<div class="tag green">Active</div>
-									</div>
-								</div>
-								<div class="table_row">
-									<div class="cell">
-										<label class="checkbox ch_children"><input type="checkbox" name="" /><span></span></label>
-									</div>
-									<div class="cell">
-										<p>DigitalOcean-FR-01</p>
-										<p class="sub_p">Amazon AWS, c3.xlagre, eu-east, Amazon Linux</p>
-									</div>
-									<div class="cell">
-										<p>server1.flashphoner.com</p>
-									</div>
-									<div class="cell">
-										<p>102.74.255.244</p>
-									</div>
-									<div class="cell">
-										<div class="tag green">Active</div>
+									<div class="table_row">
+										<div class="cell">
+											<label class="checkbox ch_children"><input type="checkbox" name="" /><span></span></label>
+										</div>
+										<div class="cell">
+											<p>DigitalOcean-FR-01</p>
+											<p class="sub_p">Amazon AWS, c3.xlagre, eu-east, Amazon Linux</p>
+										</div>
+										<div class="cell">
+											<p>server1.flashphoner.com</p>
+										</div>
+										<div class="cell">
+											<p>102.74.255.244</p>
+										</div>
+										<div class="cell">
+											<div class="tag green">Active</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -516,11 +520,12 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
 	<!-- /Content -->
 
 	</div>
+
+	<div class="resp_bg"></div>
 
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
