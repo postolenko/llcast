@@ -93,7 +93,12 @@ $(document).ready(function() {
   $(".drp_box_btn").on("click", function(e) {
     e.preventDefault();
     parent = $(this).closest(".drp_box");
-    parent.toggleClass("active");
+    drpBoxMenu = parent.find(".drp_box_menu");
+    if(parent.hasClass("active")) {
+      parent.removeClass("active");
+    } else {
+      parent.addClass("active");
+    }
   });
 
   $(this).keydown(function(eventObject){
@@ -102,14 +107,17 @@ $(document).ready(function() {
     }
   });
 
-  $(document).on("mouseup", function(e) {
-      e.preventDefault();
-      hide_element = $(".drp_box_menu");
-      if (!hide_element.is(e.target)
-          && hide_element.has(e.target).length === 0) {
-          parent = hide_element.closest(".drp_box");
-          parent.removeClass("active");
-      }
+  $(document).mouseup(function(e) {
+    e.preventDefault();
+    hide_element = $(".drp_box.active");
+    if (!hide_element.is(e.target)
+        && hide_element.has(e.target).length === 0) {
+        $(".drp_box").each(function() {
+          if($(this).hasClass("active")) {
+            $(this).removeClass("active");
+          }
+        });
+    }
   });
 
   // -------------

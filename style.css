@@ -1344,6 +1344,7 @@ textarea:focus {
 .dropdown_menu {
     width: 150px;
     background: #FFF;
+    padding-bottom: 3px;
     border: 1px solid #D8D8D8;
     border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -1480,7 +1481,7 @@ textarea:focus {
     height: 0;
     z-index: -1;
     overflow: hidden;
-    padding: 3px 0 0 0;
+    padding: 3px 0 3px 0;
     background: #FFF;
     border: 1px solid #D8D8D8;
     border-radius: 0 4px 4px 0;
@@ -1791,6 +1792,10 @@ textarea:focus {
     color: #AEAEAE;
 }
 
+.sort_drp_wrapp {
+
+}
+
 .sort_link {
     display: inline-block;
     vertical-align: top;
@@ -1815,6 +1820,58 @@ textarea:focus {
     top: 5px;
     right: 0;
     opacity: .3;
+}
+
+.sort_drp_wrapp.active .sort_link:after {
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+}
+
+.sort_drp_menu {
+    width: 150px;
+    background: #FFF;
+    border: 1px solid #D8D8D8;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -webkit-box-shadow: 0 5px 15px 0 rgb(0 0 0 / 10%);
+    -moz-box-shadow: 0 5px 15px 0 rgba(0,0,0,.1);
+    box-shadow: 0 5px 15px 0 rgb(0 0 0 / 10%);
+}
+
+.drp_box .sort_drp_menu.drp_box_menu {
+    top: calc(100% - 6px);
+}
+
+.ch_items {
+    padding: 0 10px 0 10px;
+}
+
+.ch_item {
+    display: flex;
+    display: -webkit-flex;
+    margin: 3px 0;
+}
+
+.ch_item > div:nth-child(1) {
+    width: calc(100% - 16px);
+}
+
+.ch_item > div:nth-child(2) {
+    width: 16px;
+}
+
+.checkbox_2 span:before {
+    width: 12px;
+    height: 12px;
+}
+
+.ch_item .checkbox {
+    top: 4px;
+}
+
+.sort_drp_menu_footer {
+    padding: 4px 10px 3px 10px;
+    border-top: 1px solid #D8D8D8;
 }
 
 .table_1 p {
