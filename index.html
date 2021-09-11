@@ -45,7 +45,14 @@
 								</li>
 								<li>
 									<a href="#"><span>Journal</span></a>
-									<button type="button" class="dropdown_btn"></button>
+									<button type="button" class="dropdown_item_btn"></button>
+									<div class="item_dropdown">
+										<ul>
+											<li><a href="#">Item 1</a></li>
+											<li><a href="#">Item 2</a></li>
+											<li><a href="#">Item 3</a></li>
+										</ul>
+									</div>
 								</li>
 							</ul>
 						</div>
@@ -62,16 +69,116 @@
 						<div class="right_col">
 							<div class="header_inlines">
 								<div>
-									<a href="#" class="bell_link">
-										<img src="img/bell.svg" alt="" />
-										<span>2</span>
-									</a>
+									<div class="drp_box">
+										<a href="#" class="bell_link drp_box_btn">
+											<img src="img/bell.svg" alt="" />
+											<span>2</span>
+										</a>
+										<div class="bell_dropdown drp_box_menu">
+											<div class="bell_items">
+												<div class="bell_item">
+													<div>
+														<p>Instance test1 has been launched successfully</p>
+													</div>
+													<div>
+														<p>30 min ago</p>
+													</div>
+												</div>
+												<div class="bell_item">
+													<div>
+														<p>Failed attempt to launch instance test2</p>
+													</div>
+													<div>
+														<p>Yesterday</p>
+													</div>
+												</div>
+												<div class="bell_item">
+													<div>
+														<p>Key 684fdwsbeefabfe has been uploaded to the...</p>
+													</div>
+													<div>
+														<p>2 days ago</p>
+													</div>
+												</div>
+											</div>
+											<div class="bell_items_dropdown slideDownBox" data-drp = "dr_1">
+												<div class="bell_item">
+													<div>
+														<p>Instance test1 has been launched successfully</p>
+													</div>
+													<div>
+														<p>30 min ago</p>
+													</div>
+												</div>
+												<div class="bell_item">
+													<div>
+														<p>Failed attempt to launch instance test2</p>
+													</div>
+													<div>
+														<p>Yesterday</p>
+													</div>
+												</div>
+												<div class="bell_item">
+													<div>
+														<p>Key 684fdwsbeefabfe has been uploaded to the...</p>
+													</div>
+													<div>
+														<p>2 days ago</p>
+													</div>
+												</div>
+											</div>
+											<a href="#" class="bell_footer_link blue_link drp_link" data-drp-link = "dr_1">View all notifications</a>
+										</div>
+									</div>
 								</div>
 								<div>
-									<div class="acc_menu_wrapp">
-										<a href="#" class="acc_link">
+									<div class="acc_menu_wrapp drp_box">
+										<a href="#" class="acc_link drp_box_btn">
 											<img src="img/user.svg" alt="" />
 										</a>
+										<div class="acc_dropdown drp_box_menu">
+											<div class="acc_dropdown_title">
+												<div class="email_wrapp">
+													<div>
+														<div class="letter">E</div>
+													</div>
+													<div>
+														<p>example@example.com</p>
+													</div>
+												</div>
+											</div>
+											<div class="acc_dropdown_content">
+												<ul class="acc_dropdown_list">
+													<li>
+														<a href="#" class="ac_thumb">
+															<div>
+																<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M13.3333 14V12.6667C13.3333 11.9594 13.0524 11.2811 12.5523 10.781C12.0522 10.281 11.3739 10 10.6667 10H5.33332C4.62608 10 3.9478 10.281 3.4477 10.781C2.94761 11.2811 2.66666 11.9594 2.66666 12.6667V14" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+																	<path d="M8.00001 7.33333C9.47277 7.33333 10.6667 6.13943 10.6667 4.66667C10.6667 3.19391 9.47277 2 8.00001 2C6.52725 2 5.33334 3.19391 5.33334 4.66667C5.33334 6.13943 6.52725 7.33333 8.00001 7.33333Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+																</svg>
+															</div>
+															<div>
+																<p>Account settings</p>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="ac_thumb">
+															<div>
+																<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M6 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V3.33333C2 2.97971 2.14048 2.64057 2.39052 2.39052C2.64057 2.14048 2.97971 2 3.33333 2H6" stroke="#121212" stroke-linecap="round" stroke-linejoin="round"/>
+																	<path d="M10.6667 11.3337L14 8.00033L10.6667 4.66699" stroke="#121212" stroke-linecap="round" stroke-linejoin="round"/>
+																	<path d="M14 8H6" stroke="#121212" stroke-linecap="round" stroke-linejoin="round"/>
+																</svg>
+															</div>
+															<div>
+																<p>Log out</p>
+															</div>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -113,6 +220,52 @@
 									<div>
 										<div class="dropdowns_wrapp">
 											<a href="#" class="dropdown_link">Actions</a>
+											<div class="dropdown_menu">
+												<div class="dropdown_title">
+													<p>Update wcs version</p>
+												</div>
+												<ul class="dropdown_list">
+													<li>
+														<a href="#">License</a>
+														<i class="menu_arrow"></i>
+														<ul>
+															<li>
+																<a href="#">Attach</a>
+															</li>
+															<li>
+																<a href="#">Detach</a>
+															</li>
+															<li>
+																<a href="#">Detach</a>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<a href="#" class="active">Private Key</a>
+														<i class="menu_arrow"></i>
+														<ul>
+															<li>
+																<a href="#">Attach</a>
+															</li>
+															<li>
+																<a href="#">Detach</a>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<a href="#">SSL-certificate</a>
+														<i class="menu_arrow"></i>
+														<ul>
+															<li>
+																<a href="#">Attach</a>
+															</li>
+															<li>
+																<a href="#">Detach</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
 										</div>
 									</div>
 									<div>
@@ -146,8 +299,8 @@
 									</button>
 								</div>
 							</div>
-							<div class="table_1">
-								<div class="table_row table_header">
+							<div class="table_1 checkboxes_array">
+								<div class="table_row">
 									<div class="cell">
 										<label class="checkbox main_checkbox"><input type="checkbox" name="" /><span></span></label>
 									</div>
@@ -164,9 +317,9 @@
 										<a href="#" class="sort_link">Status</a>
 									</div>
 								</div>
-								<div class="table_row table_header">
+								<div class="table_row">
 									<div class="cell">
-										<label class="checkbox"><input type="checkbox" name="" /><span></span></label>
+										<label class="checkbox ch_children"><input type="checkbox" name="" /><span></span></label>
 									</div>
 									<div class="cell">
 										<p>DigitalOcean-FR-01</p>
@@ -182,9 +335,9 @@
 										<div class="tag green">Active</div>
 									</div>
 								</div>
-								<div class="table_row table_header">
+								<div class="table_row">
 									<div class="cell">
-										<label class="checkbox"><input type="checkbox" name="" /><span></span></label>
+										<label class="checkbox ch_children"><input type="checkbox" name="" /><span></span></label>
 									</div>
 									<div class="cell">
 										<p>DigitalOcean-FR-01</p>
@@ -200,9 +353,9 @@
 										<div class="tag green">Active</div>
 									</div>
 								</div>
-								<div class="table_row table_header">
+								<div class="table_row">
 									<div class="cell">
-										<label class="checkbox"><input type="checkbox" name="" /><span></span></label>
+										<label class="checkbox ch_children"><input type="checkbox" name="" /><span></span></label>
 									</div>
 									<div class="cell">
 										<p>DigitalOcean-FR-01</p>
@@ -218,9 +371,9 @@
 										<div class="tag green">Active</div>
 									</div>
 								</div>
-								<div class="table_row table_header">
+								<div class="table_row">
 									<div class="cell">
-										<label class="checkbox"><input type="checkbox" name="" /><span></span></label>
+										<label class="checkbox ch_children"><input type="checkbox" name="" /><span></span></label>
 									</div>
 									<div class="cell">
 										<p>DigitalOcean-FR-01</p>
@@ -236,9 +389,9 @@
 										<div class="tag green">Active</div>
 									</div>
 								</div>
-								<div class="table_row table_header">
+								<div class="table_row">
 									<div class="cell">
-										<label class="checkbox"><input type="checkbox" name="" /><span></span></label>
+										<label class="checkbox ch_children"><input type="checkbox" name="" /><span></span></label>
 									</div>
 									<div class="cell">
 										<p>DigitalOcean-FR-01</p>
@@ -254,9 +407,9 @@
 										<div class="tag green">Active</div>
 									</div>
 								</div>
-								<div class="table_row table_header">
+								<div class="table_row">
 									<div class="cell">
-										<label class="checkbox"><input type="checkbox" name="" /><span></span></label>
+										<label class="checkbox ch_children"><input type="checkbox" name="" /><span></span></label>
 									</div>
 									<div class="cell">
 										<p>DigitalOcean-FR-01</p>
@@ -272,9 +425,9 @@
 										<div class="tag green">Active</div>
 									</div>
 								</div>
-								<div class="table_row table_header">
+								<div class="table_row">
 									<div class="cell">
-										<label class="checkbox"><input type="checkbox" name="" /><span></span></label>
+										<label class="checkbox ch_children"><input type="checkbox" name="" /><span></span></label>
 									</div>
 									<div class="cell">
 										<p>DigitalOcean-FR-01</p>
@@ -290,9 +443,9 @@
 										<div class="tag green">Active</div>
 									</div>
 								</div>
-								<div class="table_row table_header">
+								<div class="table_row">
 									<div class="cell">
-										<label class="checkbox"><input type="checkbox" name="" /><span></span></label>
+										<label class="checkbox ch_children"><input type="checkbox" name="" /><span></span></label>
 									</div>
 									<div class="cell">
 										<p>DigitalOcean-FR-01</p>
@@ -321,8 +474,15 @@
 										</div>
 									</div>
 									<div>
-										<div class="count_dropdown">
-											<a href="#" class="count_link">20</a>
+										<div class="count_dropdown drp_box">
+											<a href="#" class="count_link drp_box_btn">20</a>
+											<div class="count_list drp_box_menu">
+												<ul>
+													<li><a href="#">10</a></li>
+													<li><a href="#" class="active">20</a></li>
+													<li><a href="#">30</a></li>
+												</ul>
+											</div>
 										</div>
 									</div>
 								</div>
