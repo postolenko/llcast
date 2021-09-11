@@ -42,12 +42,15 @@ $(document).ready(function() {
   var chChildrens;
 
   $(".main_checkbox input").on("change", function() {
+      mainCh = $(this).closest(".main_checkbox");
       parentBlock = $(this).closest(".checkboxes_array");
       chChildrens = parentBlock.find(".ch_children input");
       if($(this).is(":checked")) {
-          chChildrens.prop("checked", true);
+        chChildrens.prop("checked", true);
+        mainCh.addClass("ch");
       } else {
-          chChildrens.prop("checked", false);
+        chChildrens.prop("checked", false);
+        mainCh.removeClass("ch");
       }
   });
 
@@ -55,13 +58,22 @@ $(document).ready(function() {
       parentBlock = $(this).closest(".checkboxes_array");
       chChildrens = parentBlock.find(".ch_children input");
       mainCheckbox = parentBlock.find(".main_checkbox input");
+      mainCh = parentBlock.find(".main_checkbox");
       chChildrens.each(function() {
-          if(!$(this).is(":checked")) {
-              mainCheckbox.prop("checked", false);
-              return false;
-          } else {
-              mainCheckbox.prop("checked", true);
-          }
+        if($(this).is(":checked")) {
+          mainCheckbox.prop("checked", true);
+          return false;
+        } else {
+          mainCheckbox.prop("checked", false);
+        }
+      });
+      parentBlock.find(".ch_children").each(function() {
+        if(!$(this).find("input").is(":checked")) {
+          mainCh.removeClass("ch");
+          return false;
+        } else {
+          mainCh.addClass("ch");
+        }
       });
   });
 

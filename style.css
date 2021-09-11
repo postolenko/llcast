@@ -470,6 +470,7 @@ textarea:focus {
 
 .llcast_templ > .left_col {
     width: 255px;
+    overflow: hidden;
     background-color: #161624;
     -webkit-transition-property: width;
     -webkit-transition-duration: .3s;
@@ -1772,6 +1773,10 @@ textarea:focus {
     left: 5px;
 }
 
+.checkbox.main_checkbox input:checked + span:after {
+    background-color: #fff;
+}
+
 .checkbox input:checked + span:before {
     border: 1px solid #1890FF;
     background-color: #1890FF;
@@ -1781,8 +1786,16 @@ textarea:focus {
     background-repeat: no-repeat;
 }
 
-.checkbox input:checked + span:after {
-    display: none;
+.checkbox.main_checkbox input:checked + span:before {
+    background-image: none;
+}
+
+.checkbox.main_checkbox.ch input:checked + span:before {
+    background-image: url(img/checkout.svg);
+}
+
+.checkbox.main_checkbox.ch input:checked + span:after {
+    background-color: transparent;
 }
 
 .table_1 h3 {
