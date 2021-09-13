@@ -236,4 +236,12 @@ $(document).ready(function() {
       }
     });
 
+    // ----------
+
+    $("#cancel_ch").on("click", function(e) {
+      e.preventDefault();
+      parent = $(this).closest("form");
+      parent.find("input[type='checkbox']").prop("checked", false);
+    });
+
 });
