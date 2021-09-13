@@ -226,6 +226,24 @@
 	
 }
 
+@media only screen and (max-width: 450px) {
+
+/*-- Popup --*/
+
+.popup_two_cols_2 > div:nth-child(odd) {
+    width: 100%;
+    padding: 2px 0;
+}
+
+.popup_two_cols_2 > div:nth-child(even) {
+    width: 100%;
+    padding: 2px 0;
+}
+
+/*-- /Popup --*/
+
+}
+
 @media only screen and (max-width: 400px) {
 
 /*-- Content --*/
