@@ -639,7 +639,7 @@ textarea:focus {
     opacity: 1;
 }
 
-.sidebar_nav li:hover:before {
+.sidebar_nav li.active:hover:before {
     opacity: 1;
 }
 
