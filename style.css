@@ -2185,7 +2185,7 @@ body.fixed {
 .popup_content {
     max-width: 490px;
     width: 94%;
-    margin: 176px auto 20px auto;
+    margin: 80px auto 20px auto;
     position: relative;
     z-index: 2;
 }
